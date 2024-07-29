@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-Xhtgg3bO8r8K7c1NG33KwVYbOq6ZEv/+GnJl/XCBPjA1T1g/oV0+z5LBtF8QBlVQ9bH6WhH4B9AzBqPoA5uB6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body, html {
+            height: 200vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 120%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to('.box', {
+            scrollTrigger: {
+                trigger: '.box',
+                start: 'top 80%', 
+                end: 'top 30%',  
+                scrub: true,     
+                markers: true    
+            },
+            x: 500,
+            rotation: 360,
+            scale: 2,
+            backgroundColor: "blue",
+            borderRadius: "50%"
+        });
+    </script>
+</body>
+</html>
