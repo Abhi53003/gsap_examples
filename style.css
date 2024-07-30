@@ -9,6 +9,7 @@ html,body
 {
     height:300vh;
     width:100%;
+    
 
 }
 
@@ -16,7 +17,7 @@ html,body
 {
     height: 300px;
     width: 800px;
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -39,4 +40,71 @@ html,body
 p{
     color: white;
     font-size: 10px;
+}
+
+.img_12
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.box
+{
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  opacity: 0.3;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+
+.box2
+{
+    display: none;
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  opacity: 0.3;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box3
+{
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  opacity: 0.3;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+
+.box4
+{
+    display: none;
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  opacity: 0.3;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
